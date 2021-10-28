@@ -12,8 +12,8 @@ router.get('/', function (req, res, next) {
   if (storeValue == 0)
     storeValue = Math.random()
   res.write("Computes the values for Math.hypot and math.ceil function." + "\n")
-  res.write('Math.hypot applied to ' + storeValue + " is " + Math.hypot(storeValue) + "\n");
-  res.end('Math.ceil applied to ' + storeValue + " is " + Math.ceil(storeValue));
+  res.write('Math.log2()t applied to ' + storeValue + " is " + Math.log2()(storeValue) + "\n");
+  res.end('Math.cosh() applied to ' + storeValue + " is " + Math.cosh()(storeValue));
 });
 
 module.exports = router;
